@@ -1,0 +1,190 @@
+/*Template Name: smart-error-404
+File Name: style.css
+Author Name: ThemeVault
+Author URI: http://www.themevault.net/
+License URI: http://www.themevault.net/license/*/
+
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: #000;
+    font-size:100%;
+    letter-spacing: 1px; 
+}
+.content{
+    background: rgba(0, 0, 0, 0) url("../images/bgbanner.png") no-repeat fixed top center / cover ;
+    text-align: center;
+}
+.left-part {
+    background-color: rgba(0,0,0,0.7);
+    float: left;
+    height: 100%;
+    margin-left: -100px;
+    position: absolute;
+    transform: skewX(-10deg);
+    width: 55%;
+}
+.all-content {
+    left: 5%;
+    margin-left: 100px;
+    position: absolute;
+    text-align: left;
+    top: 20%;
+    transform: skewX(10deg);
+}
+.logo h1 {
+    color: #2196f3;
+    font-size: 36px;
+    letter-spacing: 2px;
+    margin: 15px 0;
+}
+.title h1 {
+    color: #fff;
+    font-size: 64px;
+    margin: 0;
+    text-transform: capitalize;
+}
+.title h1 span{
+    color:#2196f3;
+}
+.para {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    text-transform: uppercase;
+    width: 90%;
+}
+.action-buttons {
+    margin-top: 50px;
+}
+.action-buttons a:first-child{
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 5px;
+}
+.action-buttons a:last-child{
+    background-color: #2196f3;
+    border: 1px solid #2196f3;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.action-buttons a:first-child:hover{
+    background-color: #2196f3;
+    border: 1px solid #2196f3;
+}
+.action-buttons a:last-child:hover{
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+.copyright-box {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -10%);
+}
+.copyright {
+    color: #fff;
+    font-size: 16px;
+}
+.copyright a, .copyright a:hover{
+    color:#2196f3;
+    text-decoration: none;
+}
+@media (max-width: 991px){
+    .all-content {
+        top: 10%;
+        margin-left: 80px;
+    }
+    .left-part {
+        width: 60%;
+        margin-left: -125px;
+    }
+    .logo h1 {
+        font-size: 30px;
+        margin: 5px 0;
+    }
+    .title h1 {
+        font-size: 46px;
+    }
+    .para {
+        font-size: 16px;
+    }
+    .action-buttons {
+        margin-top: 40px;
+    }
+    .action-buttons a:first-child, .action-buttons a:last-child {
+        font-size: 14px;
+    }
+}
+@media (max-width: 767px){
+    .action-buttons {
+        margin-top: 30px;
+    }
+    .para {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .title h1 {
+        font-size: 38px;
+    }
+    .logo h1 {
+        font-size: 26px;
+    }
+    .left-part {
+        margin-left: -80px;
+        width: 70%;
+    }
+}
+@media (max-width: 500px){
+    .left-part {
+        width: 75%;
+    }
+    .logo h1 {
+        font-size: 22px;
+    }
+    .title h1 {
+        font-size: 32px;
+    }
+    .para {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .action-buttons {
+        margin-top: 25px;
+    }
+    .action-buttons a:first-child, .action-buttons a:last-child {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
+@media (max-width: 400px){
+    .left-part {
+    margin: 0;
+    transform: skewX(0deg);
+    width: 100%;
+}
+.all-content {
+    margin-left: 0;
+     left: 0;
+    top: 10%;
+    transform: skewX(0deg);
+    text-align: center;
+}
+.para {
+    margin: 10px auto;
+    width: 80%;
+}
+}
