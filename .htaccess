@@ -1,0 +1,27 @@
+RewriteEngine ON
+ErrorDocument 404 /404.php
+ErrorDocument 403 /403.php
+RewriteRule ^mysql$ /mysql_error.php [L]
+RewriteRule ^rules$ /rules2.php [L]
+
+RewriteRule ^signup$ /signup2.php [L]
+RewriteRule ^signup/$ /signup2.php [L]
+
+RewriteRule ^login$ /login2.php [L]
+RewriteRule ^login/$ /login2.php [L]
+
+RewriteRule ^logout$ /logout2.php [L]
+RewriteRule ^logout/$ /logout2.php [L]
+
+RewriteRule ^izmainas$ /izmainas2.php [L]
+RewriteRule ^izmainas/$ /izmainas2.php [L]
+RewriteRule ^lizmainas$ /lizmainas2.php [L]
+RewriteRule ^lizmainas/$ /lizmainas2.php [L]
+
+RewriteRule ^profils$ /user2.php [L]
+RewriteRule ^profils/$ /user2.php [L]
+
+BrowserMatchNoCase SpammerRobot bad_bot
+BrowserMatchNoCase SecurityHoleRobot bad_bot
+Order Deny,Allow
+Deny from env=bad_bot
